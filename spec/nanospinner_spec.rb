@@ -8,7 +8,6 @@ describe Nanospinner do
   it "outputs the right messages" do
     subject.spin("Hello")
     subject.spin("Goodbye")
-    
-    expect(buf.string).to eq(2) #" | Hello\r\r\r\r\r\r\r\r / Goodbye")
+    expect(buf.string).to eq(" | Hello\r\r\r\r\r\r\r\r / Goodbye")
   end
 end
