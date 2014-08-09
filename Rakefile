@@ -11,14 +11,16 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
+require File.dirname(__FILE__) + '/lib/nanospinner'
+
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "nanospinner"
   gem.homepage = "http://github.com/julik/nanospinner"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A tiny commandline spinner}
+  gem.description = %Q{Outputs a spinning indicator to the terminal, updating it on every revolution}
   gem.email = "me@julik.nl"
   gem.authors = ["Julik Tarkhanov"]
   # dependencies defined in Gemfile
